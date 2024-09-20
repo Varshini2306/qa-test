@@ -10,6 +10,7 @@ import java.io.File;
 import org.openqa.selenium.TakesScreenshot;
 import java.io.IOException;
 import org.openqa.selenium.io.FileHandler;
+import org.openqa.selenium.OutputType;
  
   
 import com.aventstack.extentreports.ExtentTest;
