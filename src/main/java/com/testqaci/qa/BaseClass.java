@@ -11,8 +11,8 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 public class BaseClass {
 
-	public static ExtentReports extent = new ExtentReports();
 	static ExtentSparkReporter spark = new ExtentSparkReporter("Extentreport.html");
+	public static ExtentReports extent = new ExtentReports();
 
 	protected static WebDriver driver;
 
