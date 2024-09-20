@@ -5,7 +5,9 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
+import java.io.File;
+import org.openqa.selenium.TakesScreenshot;
+  
 import com.aventstack.extentreports.ExtentTest;
 
 import com.testqaci.qa.BaseClass;
@@ -38,5 +40,13 @@ public class LoginTest extends BaseClass {
 		Thread.sleep(2000);
 		extent.flush();
 	}
+	@AfterMethod
+	public void Capturescreenshot() throws IOException {
+		File source=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		File dest=new File("./screenshots/screenshot1.png");
+		FileHandler.copy(source, dest);
+		Logger.info("Taken Screenshot of Intake Page");
+	}
+ 
 
 }
