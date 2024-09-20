@@ -25,6 +25,7 @@ jobs:
       run: | 
         mvn -B package --file pom.xml
         mvn clean test
+        tree .
     - name: Use the Upload Artifact GitHub Action
       if: always() && true
       uses: actions/upload-artifact@v4
