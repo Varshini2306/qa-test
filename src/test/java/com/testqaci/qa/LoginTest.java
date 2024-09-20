@@ -33,9 +33,7 @@ public class LoginTest extends BaseClass {
 	public void loginprocess() throws InterruptedException {
 		BaseClass.openbrowser();
 		Thread.sleep(5000);
-		extent.flush();
 		ExtentTest test = extent.createTest("Login Process Verification");
- 
 		LoginPage LP = new LoginPage(BaseClass.driver);
 		Logger.info("Add  credentials");
 
