@@ -48,7 +48,7 @@ public class LoginTest extends BaseClass {
 	@AfterMethod
 	public void Capturescreenshot() throws IOException {
 		File source=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		File dest=new File("/home/runner/work/qa-test/screenshots/screenshot1.png");
+		File dest=new File("/home/runner/work/qa-test/qa-test/screenshots/screenshot1.png");
 		FileHandler.copy(source, dest);
 		Logger.info("Taken Screenshot of Intake Page");
 	}
