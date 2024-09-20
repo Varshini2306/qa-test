@@ -5,8 +5,12 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import org.testng.annotations.AfterMethod;
 import java.io.File;
 import org.openqa.selenium.TakesScreenshot;
+import java.io.IOException;
+import org.openqa.selenium.io.FileHandler;
+ 
   
 import com.aventstack.extentreports.ExtentTest;
 
