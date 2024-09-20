@@ -34,14 +34,16 @@ public class LoginTest extends BaseClass {
 	public void loginprocess() throws InterruptedException {
 		BaseClass.openbrowser();
 		Thread.sleep(5000);
+		extent.attachReporter(spark); 
 		ExtentTest test = extent.createTest("Login Process Verification");
-		WebDriver driver;
+		
 		LoginPage LP = new LoginPage(BaseClass.driver);
 		Logger.info("Add  credentials");
 
 		LP.username();
 		LP.Password();
 		LP.LoginBTW();
+     		test.pass("PASS"); 
 
 		Logger.info("Login done now ");
 		Thread.sleep(4000);
