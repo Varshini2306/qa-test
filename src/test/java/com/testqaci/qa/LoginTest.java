@@ -44,7 +44,7 @@ public class LoginTest extends BaseClass {
 		LP.LoginBTW();
 
 		Logger.info("Login done now ");
-		Thread.sleep(3000);
+		Thread.sleep(4000);
 		extent.flush();
 	}
 	@AfterMethod
