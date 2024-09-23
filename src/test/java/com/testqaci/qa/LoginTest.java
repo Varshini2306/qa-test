@@ -52,7 +52,6 @@ public class LoginTest extends BaseClass {
 	@AfterMethod
 	public void Capturescreenshot() throws IOException {
 		File source=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		system.out.println(system.getenv());
    	        System.out.println("Working Directory = " + System.getProperty("user.dir"));
 		File dest=new File("/home/runner/work/qa-test/qa-test/screenshot/screenshot1.png");
 		FileHandler.copy(source, dest);
